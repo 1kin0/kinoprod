@@ -5,9 +5,9 @@ export default function Header() {
 
     return (
         <header>
-            <div className='display: flex; flex-direction: row;'>
-                <img src={viteLogo} alt="Logo" />
-                <h2>kinoprod</h2>
+            <div className='flex flex-row gap-5'>
+                <img src={viteLogo} alt="Logo" className='w-6'/>
+                <h2 className='text-2xl'>kinoprod</h2>
             </div>
             <span>{now.toLocaleDateString()}</span>
         </header>
