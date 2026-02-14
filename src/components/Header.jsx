@@ -9,12 +9,11 @@ export default function Header() {
             <div className='flex flex-row items-center gap-8'>
                 <div className='flex flex-row gap-4'>
                     <img src={viteLogo} alt="Logo" className='w-6'/>
-                    <h2 className='text-2xl'>kinoprod / {pageName}</h2>
+                    <h2 className='text-2xl'>{pageName}</h2>
                 </div>
-                <ul className='flex flex-row gap-6 justify-start'>
-                    <li>Contact</li>
-                    <li>Projects</li>
-                    <li>Tools</li>
+                <ul className='flex flex-row gap-5 justify-start'>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Projects</a></li>
                 </ul>
             </div>
             <span>{now.toLocaleDateString()}</span>

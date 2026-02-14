@@ -1,10 +1,3 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +32,23 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Родитель эффекта должен иметь relative + overflow-hidden, чтобы эффект оставался внутри */
+.LightEffect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.LightEffect ~ * {
+  position: relative;
+  z-index: 1;
 }
