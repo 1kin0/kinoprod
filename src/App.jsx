@@ -8,7 +8,9 @@ import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 
 //Effects
-import LightRays from './components/LightRays.jsx'
+import LightRays from './components/effects/LightRays.jsx'
+import CurvedLoop from './components/effects/CurvedLoop.jsx'
+import ShinyText from './components/effects/ShinyText.jsx'
 
 //Vercel
 import { Analytics } from "@vercel/analytics/react"
@@ -48,6 +50,16 @@ function App() {
       </div>
 
       <div className= 'w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden'>
+        <div className='w-full absolute'>
+          <CurvedLoop 
+            marqueeText="✦ rbx ✦ ue5 ✦ unity ✦ web "
+            speed={1}
+            curveAmount={600}
+            direction="right"
+            interactive
+            className="custom-text-style"
+          />
+        </div>
         <h1>Skills</h1>
       </div>
 
@@ -56,7 +68,12 @@ function App() {
       </div>
 
       <div className= 'w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden'>
-        <h1>Dm us {'<'}3</h1>
+        <div className='text-5xl'>
+          <ShinyText
+            text='Dm us <3'
+            speed={2}
+          />
+        </div>
       </div>
 
       <Analytics/>
