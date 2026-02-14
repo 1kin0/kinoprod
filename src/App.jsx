@@ -2,8 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+
 import Header from './components/Header.jsx'
 import Dither from './components/Dither.jsx'
+
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
   const [count, setCount] = useState(0)
