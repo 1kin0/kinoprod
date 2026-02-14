@@ -14,6 +14,7 @@ import CurvedLoop from './components/effects/CurvedLoop.jsx'
 import ShinyText from './components/effects/ShinyText.jsx'
 import SpotlightCard from './components/effects/SpotlightCard.jsx'
 import CardSwap, { Card } from './components/effects/CardSwap.jsx'
+import StaticDotGrid from './components/effects/DotGrid.jsx'
 
 //Vercel
 import { Analytics } from "@vercel/analytics/react"
@@ -100,30 +101,37 @@ function App() {
           >
 
             <Card>
-              <h3>Card 1</h3>
+              <h1>Target 1</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </Card>
 
             <Card>
-              <h3>Card 2</h3>
+              <h1>Target 2</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </Card>
 
             <Card>
-              <h3>Card 3</h3>
+              <h1>Target 3</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </Card>
 
             <Card>
-              <h3>Card 4</h3>
+              <h1>Objective</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </Card>
 
             <Card>
-              <h3>Card 5</h3>
+              <h1>Subjective</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </Card>
           </CardSwap>
+
+          <StaticDotGrid 
+            dotSize={2}
+            gap={50}
+            color="#666"
+            className="bg-black"
+          />
       </section>
 
       <section className= 'w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden' id='skills'>
