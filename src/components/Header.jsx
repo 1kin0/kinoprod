@@ -1,13 +1,13 @@
-import viteLogo from '/vite.svg'
+import sunLogo from '/sun.png'
 
 export default function Header() {
     const now = new Date()
 
     return (
         <header>
-            <div className='flex flex-row items-center gap-10'>
-                <div className='flex flex-row gap-4'>
-                    <a href="#home"><img src={viteLogo} alt="Logo" className='w-6'/></a>
+            <div className='flex flex-row items-center gap-8'>
+                <div className='flex flex-row'>
+                    <a href="#home"><img src={sunLogo} alt="Logo" className='w-6'/></a>
                 </div>
                 <ul className='flex flex-row gap-5 justify-start'>
                     <li><a href="#about">About</a></li>
