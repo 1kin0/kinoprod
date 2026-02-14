@@ -46,25 +46,34 @@ function App() {
       </div>
 
       <div className='bg-gray-800 text-gray-300 w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden'>
-        <h1>Introducing</h1>
+        <h1 className='p-2 text-4xl'>Introducing</h1>
       </div>
 
       <div className= 'w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden'>
         <div className='w-full absolute'>
           <CurvedLoop 
             marqueeText="✦ rbx ✦ ue5 ✦ unity ✦ web "
-            speed={1}
+            speed={0.8}
             curveAmount={600}
             direction="right"
             interactive
             className="custom-text-style"
           />
+          <CurvedLoop 
+            marqueeText="✦ c++ ✦ py3 ✦ html  ✦ css ✦ js "
+            speed={1.3}
+            curveAmount={-400}
+            direction="left"
+            interactive
+            className="custom-text-style"
+          />
         </div>
-        <h1>Skills</h1>
+        <h1 className='p-2 text-4xl'>Skills</h1>
       </div>
 
       <div className= 'bg-gray-800 text-gray-300 w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden'>
-        <h1>Your minds?</h1>
+        <h1>Your minds</h1>
+        <p className='text-gray-500'>Have an idea?</p>
       </div>
 
       <div className= 'w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden'>
