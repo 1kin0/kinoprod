@@ -148,12 +148,7 @@ function App() {
             className="custom-text-style"
           />
         </div>
-        <div className='text-6xl'>
-          <ShinyText
-            text='Skills'
-            speed={2}
-          />
-        </div>
+        <h1>Skills</h1>
         <img src={strokeSvg} alt="stroke" className='z-1 w-3xs'/>
       </section>
 
