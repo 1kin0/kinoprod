@@ -28,15 +28,15 @@ function App() {
               raysOrigin="top-center"
               raysColor="#ffffff"
               raysSpeed={1}
-              lightSpread={0.6}
-              rayLength={4}
+              lightSpread={0.55}
+              rayLength={3.7}
               followMouse={true}
               mouseInfluence={0.08}
-              noiseAmount={.23}
+              noiseAmount={.18}
               distortion={0}
               className="custom-rays"
               pulsating={false}
-              fadeDistance={2}
+              fadeDistance={1.8}
               saturation={1}
           />
         </div>
@@ -53,7 +53,7 @@ function App() {
         <div className='w-full absolute'>
           <CurvedLoop 
             marqueeText="✦ rbx ✦ ue5 ✦ unity ✦ web "
-            speed={0.8}
+            speed={0.7}
             curveAmount={600}
             direction="right"
             interactive
@@ -61,7 +61,7 @@ function App() {
           />
           <CurvedLoop 
             marqueeText="✦ c++ ✦ py3 ✦ html  ✦ css ✦ js "
-            speed={1.3}
+            speed={1.2}
             curveAmount={-400}
             direction="left"
             interactive
