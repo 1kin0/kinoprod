@@ -14,7 +14,6 @@ import CurvedLoop from './components/effects/CurvedLoop.jsx'
 import ShinyText from './components/effects/ShinyText.jsx'
 import SpotlightCard from './components/effects/SpotlightCard.jsx'
 import CardSwap, { Card } from './components/effects/CardSwap.jsx'
-import StaticDotGrid from './components/effects/DotGrid.jsx'
 
 //Vercel
 import { Analytics } from "@vercel/analytics/react"
@@ -77,7 +76,7 @@ function App() {
               rayLength={3.7}
               followMouse={true}
               mouseInfluence={0.08}
-              noiseAmount={.18}
+              noiseAmount={.2}
               distortion={0}
               className="custom-rays"
               pulsating={false}
@@ -90,15 +89,16 @@ function App() {
         <p className='text-gray-500'>Welcome to my homepage!</p>
       </section>
 
-      <section className='bg-gray-800 text-gray-300 w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden' id='about'>
+      <section className='bg-transparent text-gray-300 w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden' id='about'>
         <h1 className='p-2 text-4xl z-1'>Introducing</h1>
         <img src={arrowSvg} alt="arrow" className='z-1 w-3xs'/>
         <CardSwap
             cardDistance={70}
             verticalDistance={100}
-            delay={4000}
+            delay={5000}
             pauseOnHover={false}
-          >
+            className='z-1'
+        >
 
             <Card>
               <h1>Target 1</h1>
@@ -126,12 +126,7 @@ function App() {
             </Card>
           </CardSwap>
 
-          <StaticDotGrid 
-            dotSize={2}
-            gap={50}
-            color="#666"
-            className="bg-black"
-          />
+          <div id='static-dot-grid'></div>
       </section>
 
       <section className= 'w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden' id='skills'>
@@ -145,7 +140,7 @@ function App() {
             className="custom-text-style"
           />
           <CurvedLoop 
-            marqueeText="✦ c++ ✦ py3 ✦ js "
+            marqueeText="✦ c++ ✦ py3 ✦ js ✦ lua "
             speed={1.2}
             curveAmount={-400}
             direction="left"
@@ -157,12 +152,15 @@ function App() {
         <img src={strokeSvg} alt="stroke" className='z-1 w-3xs'/>
       </section>
 
-      <section className='bg-gray-800 text-gray-300 w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden py-12' id='projects'>
+      <section className='bg-transparent text-gray-300 w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden py-12' id='projects'>
         <h1>Projects</h1>
         <p className='text-gray-500'>A lot of unusual works</p>
+
         <div id='card-grid'>
           {CreateProjectCards()}
         </div>
+
+        <div id='static-dot-grid'></div>
       </section>
 
       <section className= 'w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden' id='contact'>

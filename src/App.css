@@ -31,15 +31,34 @@
 }
 
 #item-card {
-  background-color: #00000035;
+  background-color: #11171e;
   border-radius: 12px;
   transition: 250ms;
-  border: 1px solid #ffffff20;
+  border: 1px solid #ffffff25;
   padding: 2em;
   aspect-ratio: 1;
 }
 
 #item-card:hover {
-  background-color: #00000055;
-  border-color:  #ffffff35;
+  background-color: #141c24;
+  border-color:  #ffffff40;
+}
+
+#static-dot-grid {
+  --dot-bg: #18202b;
+  --dot-color: #ffffff50;
+  --dot-size: 3px;
+  --dot-space: 40px;
+  background:
+    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
 }
