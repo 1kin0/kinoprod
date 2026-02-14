@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
@@ -46,7 +50,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 40px 16px 40px;
+  padding: 17px 40px 17px 40px;
   border-bottom: 1px solid #37373784;
 }
 
@@ -59,7 +63,7 @@ footer {
   right: 0;
   display: flex;
   justify-content: space-between;
-  padding: 16px 40px 16px 40px;
+  padding: 17px 40px 17px 40px;
   border-top: 1px solid #37373784;
   
 }

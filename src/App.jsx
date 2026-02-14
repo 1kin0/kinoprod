@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
@@ -11,6 +10,7 @@ import Footer from './components/Footer.jsx'
 import LightRays from './components/effects/LightRays.jsx'
 import CurvedLoop from './components/effects/CurvedLoop.jsx'
 import ShinyText from './components/effects/ShinyText.jsx'
+import MagicBento from './components/effects/MagicBento.jsx'
 
 //Vercel
 import { Analytics } from "@vercel/analytics/react"
@@ -22,7 +22,7 @@ function App() {
     <>
       <Header/>
 
-      <div className='w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden'>
+      <section className='w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden' id='home'>
         <div className='LightEffect'>
           <LightRays
               raysOrigin="top-center"
@@ -43,13 +43,13 @@ function App() {
 
         <h1 className='p-2 text-4xl'>Welcome</h1>
         <p className='text-gray-500'>Welcome to my homepage!</p>
-      </div>
+      </section>
 
-      <div className='bg-gray-800 text-gray-300 w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden'>
+      <section className='bg-gray-800 text-gray-300 w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden' id='about'>
         <h1 className='p-2 text-4xl'>Introducing</h1>
-      </div>
+      </section>
 
-      <div className= 'w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden'>
+      <section className= 'w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden' id='skills'>
         <div className='w-full absolute'>
           <CurvedLoop 
             marqueeText="✦ rbx ✦ ue5 ✦ unity ✦ web "
@@ -69,21 +69,21 @@ function App() {
           />
         </div>
         <h1 className='p-2 text-4xl'>Skills</h1>
-      </div>
+      </section>
 
-      <div className= 'bg-gray-800 text-gray-300 w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden'>
-        <h1>Your minds</h1>
-        <p className='text-gray-500'>Have an idea?</p>
-      </div>
+      <section className= 'bg-gray-800 text-gray-300 w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden' id='projects'>
+        <h1>Projects</h1>
+        <p className='text-gray-500'>A lot of unusual works</p>
+      </section>
 
-      <div className= 'w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden'>
+      <section className= 'w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden' id='contact'>
         <div className='text-5xl'>
           <ShinyText
-            text='Dm us <3'
+            text='Dm me <3'
             speed={2}
           />
         </div>
-      </div>
+      </section>
 
       <Analytics/>
       <SpeedInsights/>
