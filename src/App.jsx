@@ -92,7 +92,6 @@ function App() {
       <section className='bg-transparent text-gray-300 w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden' id='about'>
         <h1 className='p-2 text-4xl z-1'>Introducing</h1>
         <img src={arrowSvg} alt="arrow" className='z-1 w-3xs'/>
-        <span id='hand-draw' className='z-1 absolute left-30 top-40 -rotate-4'>hello from kino!!</span>
         <CardSwap
             cardDistance={70}
             verticalDistance={100}
