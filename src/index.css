@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 html {
   scroll-behavior: smooth;
 }
@@ -31,6 +29,10 @@ html {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+#hand-written {
+  font-family: "Gloria Hallelujah", cursive;
 }
 
 a {
