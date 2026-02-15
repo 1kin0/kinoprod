@@ -149,7 +149,7 @@ function App() {
           />
         </div>
         <h1>Skills</h1>
-        <img src={strokeSvg} alt="stroke" className='z-1 w-58'/>
+        <img src={strokeSvg} alt="stroke" className='z-1 w-3xs'/>
       </section>
 
       <section className='bg-transparent text-gray-300 w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden py-12' id='projects'>
@@ -170,7 +170,7 @@ function App() {
             speed={2}
           />
         </div>
-        <img src={heartSvg} alt="heart" className='m-6 w-18'/>
+        <img src={heartSvg} alt="heart" className='m-6 w-20'/>
       </section>
 
       <Analytics/>
